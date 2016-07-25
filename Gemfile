@@ -14,7 +14,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 # jquery
-gem 'jquery-middleman', :require => false
+gem 'jquery-middleman', :require => true
 
 # es6
 gem "middleman-es6", github: "vast/middleman-es6"
