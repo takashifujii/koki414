@@ -19,4 +19,11 @@ $(function(){
       $(".border").addClass('change');
     }, 1000);
   });
+
+  $window.on('resize', function(){
+    var ww = $window.width();
+    if(ww > 768){
+      $(".border").attr("style", ""); 
+    }
+  });
 });
