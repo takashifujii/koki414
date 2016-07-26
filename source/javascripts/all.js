@@ -1,4 +1,3 @@
-//= require jquery
 //= require_tree .
 
 $(function(){
@@ -12,7 +11,7 @@ $(function(){
 
   $window.on("load", () => {
     setTimeout( () => {
-      $(".catch").addClass('change');
+      $(".catch").add(".title").addClass('change');
       $(".brdr").removeClass('st');
     }, 1000);
   });
