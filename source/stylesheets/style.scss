@@ -48,8 +48,8 @@ $break-small: 768px;
   box-sizing: border-box;
 }
 ::selection {
-    background: #2e41af;
-    color: #fff20f;
+    background: #d21c1c;
+    color: #fff;
 }
 
 body {
@@ -59,33 +59,48 @@ body {
 }
 
 .brdr{
-  position: fixed;
-  background-color: #ff77ff;
+  position: absolute;
+  z-index: 100;
+  background-color: #d21c1c;
   margin: 12px;
+  transition: all 0.66s ease-in-out;
+  -webkit-transition: all 0.66s ease-in-out;
 }
 .brdr-t{
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 6px;
+  &.st{
+    right: 100%;
+  }
 }
 .brdr-r{
   top: 0;
   right: 0;
   bottom: 0;
-  width: 3px;
+  width: 7px;
+  &.st{
+    top: 100%;
+  }
 }
 .brdr-b{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 6px;
+  &.st{
+    left: 100%;
+  }
 }
 .brdr-l{
   top: 0;
   left: 0;
   bottom: 0;
-  width: 3px;
+  width: 7px;
+  &.st{
+    bottom: 100%;
+  }
 }
 .main{
   height: 90vh;
@@ -121,6 +136,11 @@ body {
       font-size: 20px;
       font-style: italic;
       letter-spacing: 2px;
+      transition: 0.6s;
+      &.change{
+        background-color: #d21c1c;
+        color: #fff;
+      }
     }
   }
 
@@ -130,13 +150,14 @@ body {
   
   .subject{
     padding-bottom: 20px;
+    font-family: 'Crimson Text', serif;
     font-size: 1.4rem;
     letter-spacing: 0.6px;
   }
 
   .information{
     padding: 40px;
-    background-color: #0000EE;
+    background-color: #d21c1c;
     color: #fff;
     line-height: 1.25;
     .concept{
@@ -160,16 +181,18 @@ body {
     position: relative;
     .subject{
       position: absolute;
-      top: 40px;
+      top: 20px;
       left: 40px;
       z-index: 10000;
-      color: #0000EE;
+      padding: 5px 3px 0;
+      color: #fff;
+      background-color: #d21c1c;
     }
   }
 
   .staff{
     padding: 40px;
-    background-color: #1010A1;
+    background-color: #d21c1c;
     color: #fff;
     line-height: 1.25;
 
@@ -190,7 +213,27 @@ body {
     }
   }
 
+  .share{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #fff;
+    text-align: center;
+    ul{
+      @include cf;
+      margin-top: 5px; 
+      display: inline-block;
+      li{
+        float: left;
+        &:first-child{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
   .footer{
+
     padding: 20px;
     background-color: #030303;
     color: #fafafa;

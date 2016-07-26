@@ -8,10 +8,13 @@
 
     <%= partial "_partial/social" %>
     <%= stylesheet_link_tag "normalize", "style", "slick" %>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:700' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
   </body>
   <%= javascript_include_tag  "all" %>
+  <div id="fb-root"></div><script async src="//platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0" id="facebook-jssdk" async></script>
 </html>
