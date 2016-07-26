@@ -13,8 +13,5 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
-# jquery
-gem 'jquery-middleman', :require => true
-
 # es6
 gem "middleman-es6", github: "vast/middleman-es6"
