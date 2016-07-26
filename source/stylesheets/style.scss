@@ -254,8 +254,8 @@ body {
 
 @include device-mobile() {
   .main{
-    height: 90vh;
-    margin-bottom: 10vh;
+    height: 85vh;
+    margin-bottom: 15vh;
 
     .title{
       position: absolute;
@@ -317,7 +317,7 @@ body {
       margin: auto;
     }
     .information{
-      padding: 40px;
+      padding: 40px 40px 50px;
     }
 
     .gallary{
@@ -325,7 +325,7 @@ body {
     }
 
     .staff{
-      padding: 40px;
+      padding: 40px 40px 50px;
     }
   }
 
@@ -397,8 +397,12 @@ body {
       width: auto;
       margin: auto;
     }
+    .cpr{
+      display: inline-block;
+      margin-bottom: 8px;
+    }
     small{
-      line-height: 1.45;
+      line-height: 1.2;
     }
   }
 }
