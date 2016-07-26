@@ -1,7 +1,7 @@
 //= require_tree .
 
 $(function(){
-  const $window = $(window);
+  var $window = $(window);
 
   $(".slider").slick({
     "dots": true,
@@ -9,11 +9,14 @@ $(function(){
     "arrows": false
   });
 
+  var mainHeight = $(".main-wrapper").innerHeight();
+  $(".border").height(mainHeight - 40);
 
-  $window.on("load", () => {
-    setTimeout( () => {
+
+  $window.on("load", function(){
+    setTimeout( function(){
       $(".catch").add(".title").addClass('change');
-      $(".brdr").removeClass('st');
+      $(".border").addClass('change');
     }, 1000);
   });
 });
