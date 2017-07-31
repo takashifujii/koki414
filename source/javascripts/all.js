@@ -3,27 +3,7 @@
 $(function(){
   var $window = $(window);
 
-  $(".slider").slick({
-    "dots": true,
-    "autoplay": true,
-    "arrows": false
-  });
-
-  var mainHeight = $(".main-wrapper").innerHeight();
-  $(".border").height(mainHeight - 40);
-
-
   $window.on("load", function(){
-    setTimeout( function(){
-      $(".catch").add(".title").addClass('change');
-      $(".border").addClass('change');
-    }, 1000);
-  });
-
-  $window.on('resize', function(){
-    var ww = $window.width();
-    if(ww > 768){
-      $(".border").attr("style", ""); 
-    }
+    $(".title span").addClass('change');
   });
 });
