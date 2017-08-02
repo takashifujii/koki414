@@ -117,8 +117,8 @@ body {
       text-align: center;
       span{
         display: inline-block;
-        transition: 1.2s;
-        transform: translateY(100px);
+        transition: transform 1.2s;
+        transform: translateY(150px);
         &.change{
           transform: translateY(0);
         }
@@ -224,7 +224,7 @@ body {
       text-align: center;
       span{
         display: inline-block;
-        transition: 1.2s;
+        transition: transform 1.2s;
         transform: translateY(100px);
         &.change{
           transform: translateY(0);
